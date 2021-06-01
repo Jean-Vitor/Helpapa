@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -46,10 +47,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
 
         holder.btn_delete.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
                 deleteItemFromList(v, pos);
-
-
             }
         });
 
@@ -71,16 +69,11 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
 
                             item_list.remove(position);
                             notifyDataSetChanged();
-
-
                         })
                 .setNegativeButton("Cancelar", (dialog, id) -> {
-
-
                 });
 
         builder.show();
-
     }
 
 

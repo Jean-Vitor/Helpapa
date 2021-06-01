@@ -43,9 +43,8 @@ public class MenuActivity extends AppCompatActivity {
         buttonInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View view) {
-                //TODO
-                //Criar a tela de informações
-                Toast.makeText(getApplicationContext(), "Você ainda n fez vagabundo", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(getApplicationContext(), InfoActivity.class);
+                startActivity(intent);
             }
         });
 

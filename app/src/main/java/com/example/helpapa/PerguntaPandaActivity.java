@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.example.helpapa.model.Item;
@@ -22,6 +23,7 @@ public class PerguntaPandaActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private Button buttonAdicionar;
     private Button buttonAdivinhar;
+    private ImageButton buttonVoltar;
     private CustomAdapter customAdapter;
 
     @Override
@@ -61,6 +63,14 @@ public class PerguntaPandaActivity extends AppCompatActivity {
                 } else {
                     Toast.makeText(getApplicationContext(), "Você tem menos de dois itens na lista", Toast.LENGTH_LONG).show();
                 }
+            }
+        });
+
+        buttonVoltar = findViewById(R.id.btnBackPanda);
+        buttonVoltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
     }

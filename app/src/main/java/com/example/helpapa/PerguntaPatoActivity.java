@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import java.util.Random;
@@ -18,6 +19,7 @@ public class PerguntaPatoActivity extends AppCompatActivity {
     private EditText inputMax;
     private String stringMin;
     private String stringMax;
+    private ImageButton buttonVoltar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +56,13 @@ public class PerguntaPatoActivity extends AppCompatActivity {
             }
         });
 
-
+        buttonVoltar = findViewById(R.id.btnBackPato);
+        buttonVoltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
     }
 }

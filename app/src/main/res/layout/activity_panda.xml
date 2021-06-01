@@ -11,8 +11,8 @@
 
     <Button
         android:id="@+id/buttonAdivinhar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
         android:layout_marginTop="40dp"
         android:text="Adivinhar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,5 +97,16 @@
             android:paddingTop="2px"
             android:paddingRight="5px" />
     </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnBackPanda"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:src="@drawable/arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
