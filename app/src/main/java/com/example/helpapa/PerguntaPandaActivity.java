@@ -80,18 +80,26 @@ public class PerguntaPandaActivity extends AppCompatActivity {
         String itemText = input.getText().toString();
 
         if(!(itemText.equals(""))){
-            if (items.contains(itemText)){
+            Item classItem = new Item(itemText);
+            if (contemItem(classItem)){
                 Toast.makeText(getApplicationContext(), "Você não pode inserir itens com nomes iguais!", Toast.LENGTH_LONG).show();
             } else {
-                items.add(new Item(itemText));
+                items.add(classItem);
                 customAdapter.notifyDataSetChanged();
                 input.setText("");
             }
-
-        }
-        else {
+        } else {
             Toast.makeText(getApplicationContext(), "Por favor, insira algum texto!", Toast.LENGTH_LONG).show();
         }
+    }
+
+    private boolean contemItem(Item classItem) {
+        for (Item item : items) {
+            if(classItem.getItemName().equals(item.getItemName())){
+                return true;
+            }
+        }
+        return false;
     }
 
 }
