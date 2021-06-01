@@ -49,7 +49,7 @@ public class PerguntaPandaActivity extends AppCompatActivity {
             @Override
             public void onClick (View view) {
                 if(items.size() >= 2) {
-                    Intent intent = new Intent(getApplicationContext(), ResultadoActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), ResultadoPandaActivity.class);
 
                     //Sorteando o item
                     Random random = new Random();

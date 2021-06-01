@@ -8,13 +8,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Pergunteaopanda">
-        <activity android:name="com.example.helpapa.ResultadoActivity" android:screenOrientation="fullSensor"></activity>
-        <activity android:name="com.example.helpapa.PerguntaPandaActivity" android:screenOrientation="fullSensor">
+        <activity android:name="com.example.helpapa.ResultadoPandaActivity" android:screenOrientation="fullSensor"></activity>
+        <activity android:name="com.example.helpapa.PerguntaPandaActivity" android:screenOrientation="fullSensor"></activity>
+        <activity android:name="com.example.helpapa.ResultadoPatoActivity" android:screenOrientation="fullSensor"></activity>
+        <activity android:name="com.example.helpapa.PerguntaPatoActivity" android:screenOrientation="fullSensor"></activity>
+        <activity android:name="com.example.helpapa.MenuActivity" android:screenOrientation="fullSensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<!--    TODO <activity android:name="com.example.helpapa.InfoActivity" android:screenOrientation="fullSensor"></activity>-->
     </application>
 </manifest>
