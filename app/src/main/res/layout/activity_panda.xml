@@ -1,112 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_centerHorizontal="true"
-    android:background="#FFFFFF"
-    android:paddingTop="2px"
-    tools:context="com.example.helpapa.PerguntaPandaActivity">
-
-    <Button
-        android:id="@+id/buttonAdivinhar"
-        android:layout_width="140dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="40dp"
-        android:text="Adivinhar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="220dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="212dp"
-        android:fontFamily="sans-serif"
-        android:gravity="center"
-        android:text="Pergunte ao Panda!"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/buttonAdicionar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="32dp"
-        android:background="#673AB7"
-        android:text="Adicionar Item"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <EditText
-        android:id="@+id/inputItem"
-        android:layout_width="157dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Lista de itens"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputItem" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="127dp"
-        android:layout_height="169dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/favpng_giant_panda_vector_graphics_bear_clip_art" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="409dp"
-        android:layout_height="181dp"
-        android:layout_marginTop="10dp"
-        android:background="#252525"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#252525"
-            android:paddingLeft="5px"
-            android:paddingTop="2px"
-            android:paddingRight="5px" />
-    </LinearLayout>
-
-    <ImageButton
-        android:id="@+id/btnBackPanda"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
         android:background="#FFFFFF"
-        android:src="@drawable/arrow_back_24"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:paddingTop="3dp"
+        tools:context="com.example.helpapa.PerguntaPandaActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/buttonAdivinhar"
+            android:layout_width="140dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="40dp"
+            android:text="Adivinhar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="212dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Pergunte ao Panda!"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonAdicionar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="10dp"
+            android:background="#673AB7"
+            android:text="Adicionar Item"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/inputItem"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/inputItem"
+            android:layout_width="137dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toStartOf="@+id/buttonAdicionar"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Lista de itens"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputItem" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="127dp"
+            android:layout_height="169dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/favpng_giant_panda_vector_graphics_bear_clip_art" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:background="#252525"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#252525" />
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/btnBackPanda"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#FFFFFF"
+            android:src="@drawable/arrow_back_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
