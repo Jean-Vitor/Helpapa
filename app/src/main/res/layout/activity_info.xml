@@ -58,7 +58,7 @@
         android:id="@+id/textView7"
         android:layout_width="324dp"
         android:layout_height="296dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:duplicateParentState="false"
         android:gravity="center"
         android:text="O aplicativo Helpapa foi desenvolvido no intuito simples porém eficaz de ajudar em o que podemos chamar de “sorteios”. Seja para escolher se vai ou não fazer algo ou até então qual de seus amigos será o responsável por lavar os pratos do churrasco, o Helpapa foi criado para te ajudar a selecionar isso. Os alunos do SESI/SENAI Jean Molino, Laura Ferrari e Marcia Ravadelli esperam poder ajudar a solucionar um pequeno problema do cotidiano de forma divertida e esteticamente agradável."
