@@ -17,10 +17,10 @@
 
         <Button
             android:id="@+id/buttonAdivinhar"
-            android:layout_width="140dp"
+            android:layout_width="wrap_content"
             android:layout_height="70dp"
             android:layout_marginTop="40dp"
-            android:text="Adivinhar"
+            android:text="Sortear"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
@@ -79,14 +79,14 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="127dp"
-            android:layout_height="169dp"
+            android:layout_width="130dp"
+            android:layout_height="170dp"
             app:layout_constraintBottom_toTopOf="@+id/textView2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/favpng_giant_panda_vector_graphics_bear_clip_art" />
+            app:srcCompat="@drawable/panda" />
 
         <LinearLayout
             android:id="@+id/linearLayout"

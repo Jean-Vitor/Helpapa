@@ -8,25 +8,25 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="176dp"
-        android:layout_height="197dp"
-        android:layout_marginTop="85dp"
+        android:layout_width="150dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="84dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.859"
+        app:layout_constraintHorizontal_bias="0.827"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/whiteduck" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="127dp"
-        android:layout_height="169dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="150dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="84dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.199"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/favpng_giant_panda_vector_graphics_bear_clip_art" />
+        app:srcCompat="@drawable/panda" />
 
     <TextView
         android:id="@+id/textView6"
